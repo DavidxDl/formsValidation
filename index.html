@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="script.js" defer="defer"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="form">
+            <label for="email">Email: </label>
+            <input type="email" id="email" required class="input">
+            <label for="country">Country: </label>
+            <select id="country" required>
+                <option selected >Country</option>
+                <option value="chile">Chile</option>
+                <option value="argentina">Argentina</option>
+                <option value="peru">Perú</option>
+                <option value="paraguay">Paraguay</option>
+            </select>
+            <label for="zip">Zip: </label>
+            <input class="input" type="number" required id="zip">
+            <label for="password">Password</label>
+            <input class="input" type="password" required minlength="8" id="password">
+            <label for="confirm-password">Confirm Password: </label>
+            <input class="input" type="password" required id="confirm-password">
+            <input type="submit" value="Register" id="register">
+        </form>
+    </div>
+    
+
+</body>
+</html>
